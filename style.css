@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Sofia', monospace;
+}
+
+.icon {
+    position: static;
+    height: 20px;
+    margin: 3px;
+
+}
+
+p {
+    display: flex;
+    font-size: 20px;
+}
+
+#logo {
+    padding-left: 10px;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 15px 20px;
+    background-color: rgba(47, 47, 47, 0.436);
+}
+
+#menuButton {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    height: 25px;
+    margin-left: 5px
+}
+
+nav {
+    width: 700px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav ul li {
+    margin-left: 2px;
+    width: 115px;
+    border-radius: 3px;
+}
+
+nav ul li:hover {
+    color: black;
+    background-color: azure;
+}
+
+@media only screen and (max-width: 820px) {
+    #menuButton {
+        display: block;
+    }
+
+
+    nav {
+        position: absolute;
+        right: 0;
+        display: flex;
+        overflow-y: hidden;
+        top: 40px;
+        height: 250px;
+        width: 0px;
+        background-color: gray;
+        border-radius: 7px;
+        transition: 0.2s;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+    }
+
+
+}
+
+.Rectangle {
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 53, 0.266);
+    text-align: center;
+}
+
+.Footer {
+    background-color: rgb(65, 64, 64);
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
+.Footer .socials {
+    display: flex;
+    justify-content: center;
+}
